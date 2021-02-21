@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## The Spraks Foundation
+
+Sparks Foundation Internship Project : Basic Banking System
+A Web Application used to transfer money between multiple users (Project contains 10 dummy users). A dummy user can also be created.
+
+## Frameworks
+
+FrontEnd:Angular js
+
+BackEnd : Spring Boot
+
+DataBase: MySQL
