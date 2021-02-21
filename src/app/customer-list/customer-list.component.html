@@ -1,0 +1,26 @@
+<div class="desing">
+  <h1>OUR CUSTOMER LIST!</h1>
+</div>
+<div class="tabledesing">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NAME</th>
+        <th scope="col">EMAIL_ID</th>
+        <th scope="col">AVALABLE_BALANCE</th>
+        <th scope="col">ACTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of collection">
+        <td>{{customer.id}}</td>
+        <td>{{customer.name}}</td>
+        <td>{{customer.email_id}}</td>
+        <td>{{customer.amount}}</td>
+        <td><a routerLink="/customerDetail/{{customer.id}}" class="btn btn-outline-success" role="button"
+            aria-pressed="true">View</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

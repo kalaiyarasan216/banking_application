@@ -1,0 +1,28 @@
+<h1>Transfer Amount!</h1>
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>SUCCESSFULL!</strong>SUCESSFULLY TRANSFR YOUR AMOUNT.
+    <button (click) = "closeAlert()" type="button"  class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="form">
+    <form [formGroup]="transferAmount" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <select class="form-control" formControlName="fromAccount">
+                <option selected>Select From Account</option>
+                <option *ngFor="let customer of collection">{{customer.email_id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control" formControlName="toAccount">
+                <option selected>Select To Account</option>
+                <option *ngFor="let customer of collection">{{customer.email_id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Enter Amount" autocomplete="off" class="form-control-material"
+                formControlName="amount" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-ghost">Transfer</button>
+    </form>
+</div>

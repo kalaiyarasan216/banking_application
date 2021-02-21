@@ -1,0 +1,23 @@
+<div class="desing">
+    <h1>OUR CUSTOMER LIST!</h1>
+</div>
+<div class="tabledesing">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">From Account</th>
+                <th scope="col">To Account</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Date_Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let history of collection">
+                <td>{{history.sender}}</td>
+                <td>{{history.receiver}}</td>
+                <td>{{history.amount}}</td>
+                <td>{{history.date_time}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

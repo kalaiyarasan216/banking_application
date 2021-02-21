@@ -1,0 +1,78 @@
+/* h1{
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    padding: 10px,0px;
+} */
+
+.login-box h1 {
+  text-align: center;
+}
+.login-box {
+  align-items: center;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 400px;
+  /* height:500px; */
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.login-box .form-input-material input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .form-input-material label {
+  position: relative;
+  top: 10%;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.login-box .form-input-materia {
+  position: relative;
+}
+.login-box .form-input-materia input:focus ~ label,
+.login-box .form-input-materia input:valid ~ label {
+  top: -10px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+.login-box form button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+.login-box button:hover {
+  background: #551033;
+  color: rgb(14, 5, 5);
+  border-radius: 5px;
+  /* box-shadow: 0 0 5px #65eff7,
+                /* 0 0 25px #03e9f4, */
+  /* 0 0 50px #03e9f4, */
+  /* 0 0 100px #03e9f4; */
+}

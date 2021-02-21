@@ -1,0 +1,36 @@
+h1{
+    font-weight: 600;
+    text-align: center;
+    color: rgb(56, 49, 49);  
+    padding-top: 10px;
+}
+.header{
+    position: absolute;
+    align-items: center;
+    top: 35%;
+    left: 33%;
+}
+.header1{
+    position: absolute;
+    align-items: center;
+    top: 25%;
+    left: 35%;
+}
+.header1{
+    position: absolute;
+    align-items: center;
+    top: 25%;
+    left: 28%;
+}
+.header3{
+    top:50%;
+    left: 35%;
+    align-items: center;
+    position: absolute;
+}
+.header4{
+    top:90%;
+    left: 20%;
+    align-items: center;
+    position: absolute;
+}
